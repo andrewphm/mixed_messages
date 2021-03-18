@@ -2,7 +2,7 @@ const messages = {
     firstWord: ['bad', 'terrible', 'okay', 'good', 'amazing', 'unbelievable'],
     secondWord: ['fruits', 'vegetables', 'sweets', 'desserts', 'sushi'],
     thirdWord: ['monsters', 'animals', 'ghosts', 'people', 'cars'],
-
+    //methods that will return a random element from the above arrays
     randFirstWord() {
         let randWord = this.firstWord[Math.floor(Math.random() * this.firstWord.length)]
         return randWord;
@@ -17,7 +17,7 @@ const messages = {
         let randWord = this.thirdWord[Math.floor(Math.random() * this.thirdWord.length)]
         return randWord;
     },
-  
+    //method that will form a fortune with random elements.
     giveFortune () {
         let firstWord = this.randFirstWord();
         let secondWord = this.randSecondWord();
@@ -28,9 +28,6 @@ const messages = {
      
  }
 
- //create methods that return a random property.
-//Create function that creates the mixed message.
 
-// Today you will have ${first} fortune. Make sure you eat lots of ${second} and watch out for ${third}.   
 
 console.log(messages.giveFortune());
